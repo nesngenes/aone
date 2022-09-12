@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(4),
-    minWidth: 500,
+    minWidth: 300,
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -66,12 +66,14 @@ const AddProduct = ({setCurrentId, currentId}) => {
           onChange={handleChange}
         />
 
+        
         <FormControl className={classes.formControl}>
           <InputLabel>Category</InputLabel>
           <Select 
           onChange={handleChange} 
           name="category"
           value={productData.category}
+          className='selectInput'
           >
             <MenuItem value='top'>Top</MenuItem>
             <MenuItem value='pants'>Pants</MenuItem>
