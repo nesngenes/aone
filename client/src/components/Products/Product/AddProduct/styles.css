@@ -1,0 +1,19 @@
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    width: 500px;
+}
+
+.add-product-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.add-product-buttons button {
+    margin: 0 20px;
+}
